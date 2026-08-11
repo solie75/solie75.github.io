@@ -1,10 +1,315 @@
 ---
-layout: archive
+layout: single
 title: "Portfolio"
 permalink: /portfolio/
 author_profile: true
 ---
 
-{% for post in site.portfolio reversed %}
-  {% include archive-single.html %}
-{% endfor %}
+<h2>Technical Skills</h2>
+
+<p>
+<img src="https://img.shields.io/badge/unrealengine-%23313131.svg?style=for-the-badge&logo=unrealengine&logoColor=white" alt="Unreal Engine">
+<img src="https://img.shields.io/badge/c++-%2300599C.svg?style=for-the-badge&logo=c%2B%2B&logoColor=white" alt="C++">
+<img src="https://img.shields.io/badge/javascript-%23F7DF1E.svg?style=for-the-badge&logo=javascript&logoColor=black" alt="JavaScript">
+<img src="https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB" alt="React">
+<img src="https://img.shields.io/badge/rider-000000.svg?style=for-the-badge&logo=rider&logoColor=white" alt="Rider">
+<img src="https://img.shields.io/badge/visual%20studio%20code-0078d7.svg?style=for-the-badge&logo=visual%20studio%20code&logoColor=white" alt="VS Code">
+<img src="https://img.shields.io/badge/git-%23F05032.svg?style=for-the-badge&logo=git&logoColor=white" alt="Git">
+<img src="https://img.shields.io/badge/win32api-%230078D6.svg?style=for-the-badge&logo=windows&logoColor=white" alt="Win32 API">
+<img src="https://img.shields.io/badge/directx12-107C10.svg?style=for-the-badge&logo=xbox&logoColor=white" alt="DirectX12">
+</p>
+
+<h2>🎮 Projects</h2>
+
+<details>
+<summary><strong>AS_Project</strong> (진행 중)</summary>
+
+<h3>AS_Project</h3>
+
+<p>
+Motion Matching 기반 로코모션과 전투 시스템을 처음부터 C++로 구현하는
+UE5.7 싱글플레이 액션 RPG 포트폴리오입니다. GASP의 Blueprint Traversal
+시스템을 C++로 완전히 포팅하는 작업을 진행 중입니다.
+</p>
+
+<p>
+<img src="https://img.shields.io/badge/UE5.7-313131?style=flat-square&logo=unrealengine&logoColor=white" alt="UE5.7">
+<img src="https://img.shields.io/badge/C++-00599C?style=flat-square&logo=c%2B%2B&logoColor=white" alt="C++">
+<img src="https://img.shields.io/badge/Portfolio-6c5ce7?style=flat-square" alt="Portfolio">
+</p>
+
+<h4>About</h4>
+<p>
+Motion Matching으로 자연스러운 로코모션을 구현하고, Motion Warping을 활용한
+정밀한 장애물 극복(Vault/Climb) 시스템을 C++ 레벨에서 설계·디버깅하며
+개발 중인 프로젝트입니다.
+</p>
+
+<h4>Tech Stack</h4>
+<p><code>UE5.7 (C++)</code> <code>Motion Matching</code> <code>Motion Warping</code> <code>Pose Search</code></p>
+
+<h4>Progress</h4>
+<ul>
+  <li>Motion Matching 기반 로코모션 시스템 구현 완료</li>
+  <li>GASP Traversal 시스템 C++ 포팅 진행 중</li>
+  <li>Motion Warping Notify / BranchIn 관련 엔진 소스 레벨 디버깅 완료</li>
+</ul>
+
+<p>
+<a href="https://github.com/solie75/AS_Project">
+<img src="https://img.shields.io/badge/개발현황-Repo-181717?style=flat-square&logo=github" alt="GitHub"></a>
+</p>
+
+</details>
+
+<details open>
+<summary><strong>Guardian And Seekers</strong></summary>
+
+<table>
+<tr>
+<td width="300">
+<img src="https://github.com/user-attachments/assets/caf710e2-bc77-40d8-ba90-ee1901f68b00" alt="Guardian And Seekers">
+</td>
+<td>
+<p>
+RTS 시점의 가디언 1명과 TPS 시점의 시커 4명이 맞붙는 비대칭 멀티플레이어
+액션 게임. 11인 팀 프로젝트에서 <strong>Player 캐릭터, 애니메이션,
+전투 시스템 설계</strong>를 담당했습니다.
+</p>
+<p>
+<img src="https://img.shields.io/badge/UE5.4-313131?style=flat-square&logo=unrealengine&logoColor=white" alt="UE5.4">
+<img src="https://img.shields.io/badge/C%2B%2B-00599C?style=flat-square&logo=c%2B%2B&logoColor=white" alt="C++">
+<img src="https://img.shields.io/badge/Team-11인-6c5ce7?style=flat-square" alt="Team">
+<img src="https://img.shields.io/badge/기간-2개월-orange?style=flat-square" alt="2 Months">
+</p>
+</td>
+</tr>
+</table>
+
+<hr>
+
+<h4>My Role — Player Character &amp; Animation &amp; Combat</h4>
+
+<p><strong>Locomotion &amp; Full-Body Animation</strong></p>
+<ul>
+  <li>Motion Matching + Chooser 조합으로 자연스러운 방향 전환·정지·회전 로코모션 구현</li>
+  <li>IK Retarget을 통한 스켈레톤 간 애니메이션 재사용 및 파츠별 Mesh 선택 시스템 구축</li>
+  <li>Animation Sequence 직접 제작 및 Animation Blueprint Template 설계로 캐릭터 간 애니메이션 로직 재사용성 확보</li>
+</ul>
+
+<p><strong>Aiming &amp; Upper-Body Layering</strong></p>
+<ul>
+  <li>Aim Offset 기반 상체 조준 블렌딩 및 Aim Mode 구현</li>
+  <li>Lean(경사/커브 대응) 처리로 이동 중 시각적 자연스러움 보강</li>
+</ul>
+
+<p><strong>Combat System</strong></p>
+<ul>
+  <li>Dedicated Server 환경 전투 로직 설계 및 콤보 시스템 구현</li>
+  <li>AnimMontage/AnimNotify를 활용한 스킬 애니메이션 트리거링</li>
+  <li>스킬 일부 구현 및 피격 연산(히트 판정·리액션) 처리</li>
+  <li>AWS GameLift 기반 세션 관리 및 매치메이킹 구축</li>
+</ul>
+
+<h4>Tech Stack</h4>
+<p><code>UE5.4</code> <code>Motion Matching</code> <code>IK Retarget</code> <code>Aim Offset</code> <code>AnimMontage</code> <code>AnimNotify</code> <code>Animation Blueprint</code> <code>AWS GameLift</code></p>
+
+<h4>Team</h4>
+<p>11인 팀 프로젝트 (기획/프로그래밍/아트) — Confluence, Slack, Notion, Figma로 협업</p>
+
+<p>
+<a href="https://github.com/NBcampUnrealTrack/1st-Team1-Final-Project">
+<img src="https://img.shields.io/badge/개발현황-Repo-181717?style=flat-square&logo=github" alt="GitHub"></a>
+<a href="https://www.youtube.com/watch?v=MGSCKdCAgDY">
+<img src="https://img.shields.io/badge/GamePlay-YouTube-FF0000?style=flat-square&logo=youtube&logoColor=white" alt="Play"></a>
+<a href="https://www.youtube.com/watch?v=XxEy7O_hXBI">
+<img src="https://img.shields.io/badge/Trailer-YouTube-FF0000?style=flat-square&logo=youtube&logoColor=white" alt="Trailer"></a>
+</p>
+
+</details>
+
+<details open>
+<summary><strong>Sky Wars!</strong></summary>
+
+<table>
+<tr>
+<td width="300">
+<img src="https://github.com/user-attachments/assets/c60e3b12-d14b-4ef2-9f62-c6ea9f9677c2" alt="Sky Wars">
+</td>
+<td>
+<p>
+탑다운 뷰 시점에서 네 캐릭터가 전투하고 마지막까지 살아남는 1인이 승자가
+되는 게임. 7인 팀 프로젝트에서 <strong>캐릭터 기본 로직과 애니메이션,
+전투 및 스킬 설계와 구현</strong>을 담당했습니다.
+</p>
+<p>
+<img src="https://img.shields.io/badge/UE5-313131?style=flat-square&logo=unrealengine&logoColor=white" alt="UE5">
+<img src="https://img.shields.io/badge/C%2B%2B-00599C?style=flat-square&logo=c%2B%2B&logoColor=white" alt="C++">
+<img src="https://img.shields.io/badge/Team-7인-6c5ce7?style=flat-square" alt="Team">
+</p>
+</td>
+</tr>
+</table>
+
+<hr>
+
+<h4>My Role — Player Character &amp; Animation &amp; Combat</h4>
+<ul>
+  <li>플레이어 기본 조작 구현</li>
+  <li>캐릭터별 ABP로 애니메이션 구현</li>
+  <li>AnimMontage로 스킬 애니메이션 구현</li>
+  <li>캐릭터의 스킬, 쿨타임, 데미지 구현</li>
+</ul>
+
+<h4>Tech Stack</h4>
+<p><code>UE5</code> <code>AnimMontage</code> <code>AnimNotify</code> <code>Animation Blueprint</code></p>
+
+<h4>Team</h4>
+<p>7인 팀 프로젝트 (기획/프로그래밍/아트)</p>
+
+<p>
+<a href="https://github.com/NBcampUnrealTrack/1st-Team4-CH4-Project">
+<img src="https://img.shields.io/badge/개발현황-Repo-181717?style=flat-square&logo=github" alt="GitHub"></a>
+<a href="https://www.youtube.com/watch?v=WcfjTOyUUuU">
+<img src="https://img.shields.io/badge/GamePlay-YouTube-FF0000?style=flat-square&logo=youtube&logoColor=white" alt="Play"></a>
+</p>
+
+</details>
+
+<details open>
+<summary><strong>Ymir Heist</strong></summary>
+
+<table>
+<tr>
+<td width="300">
+<img src="https://github.com/user-attachments/assets/5ef5213e-f94c-4d97-aa87-ee51f734514d" alt="Ymir Heist">
+</td>
+<td>
+<p>
+정해진 장소에서 플레이어는 쿼터뷰로 몰려드는 AI 경비 몬스터를 쓰러뜨리고
+아이템을 모아 무기를 제작합니다. 최종 보스를 쓰러뜨리고 탈출하면 승리입니다.
+5인 팀 프로젝트에서 <strong>Player 캐릭터, 애니메이션</strong>을 담당했습니다.
+</p>
+<p>
+<img src="https://img.shields.io/badge/UE5.4-313131?style=flat-square&logo=unrealengine&logoColor=white" alt="UE5.4">
+<img src="https://img.shields.io/badge/C%2B%2B-00599C?style=flat-square&logo=c%2B%2B&logoColor=white" alt="C++">
+<img src="https://img.shields.io/badge/Team-5인-6c5ce7?style=flat-square" alt="Team">
+</p>
+</td>
+</tr>
+</table>
+
+<hr>
+
+<h4>My Role — Player Character &amp; Animation</h4>
+<ul>
+  <li>Motion Matching을 활용한 방향 전환·정지·회전 로코모션 구현</li>
+  <li>Aim Offset 기반 상체 조준 및 Aim Mode 구현</li>
+</ul>
+
+<h4>Tech Stack</h4>
+<p><code>UE5.4</code> <code>Motion Matching</code> <code>Aim Offset</code> <code>Animation Blueprint</code></p>
+
+<h4>Team</h4>
+<p>5인 팀 프로젝트 (기획/프로그래밍)</p>
+
+<p>
+<a href="https://github.com/NBcampUnrealTrack/1st-Team7-CH3-Project">
+<img src="https://img.shields.io/badge/개발현황-Repo-181717?style=flat-square&logo=github" alt="GitHub"></a>
+<a href="https://www.youtube.com/watch?v=SnrPjFUvvFs">
+<img src="https://img.shields.io/badge/GamePlay-YouTube-FF0000?style=flat-square&logo=youtube&logoColor=white" alt="Play"></a>
+</p>
+
+</details>
+
+<details open>
+<summary><strong>ROOKIE HERO</strong></summary>
+
+<table>
+<tr>
+<td width="300">
+<img src="https://github.com/user-attachments/assets/c7f584f9-1a01-4b2b-bdf4-34b9d378f4c3" alt="ROOKIE HERO">
+</td>
+<td>
+<p>
+로그라이크 형식의 텍스트 RPG로 용사가 되어 왕국을 구합니다.
+5인 팀 프로젝트에서 <strong>구조 설계, 스테이지 제작, 스테이지 변환,
+캐릭터</strong>를 구현했습니다.
+</p>
+<p>
+<img src="https://img.shields.io/badge/C%2B%2B-00599C?style=flat-square&logo=c%2B%2B&logoColor=white" alt="C++">
+<img src="https://img.shields.io/badge/Team-5인-6c5ce7?style=flat-square" alt="Team">
+</p>
+</td>
+</tr>
+</table>
+
+<hr>
+
+<h4>My Role — System Architect, Stage, Player Character</h4>
+<ul>
+  <li>전체적인 게임 구조 설계 및 구축</li>
+  <li>각 스테이지와 스테이지 간 이동 구현</li>
+  <li>캐릭터와 상태 변경 구현</li>
+  <li>전반적인 코드 QA 및 리팩토링</li>
+</ul>
+
+<h4>Tech Stack</h4>
+<p><code>C++</code></p>
+
+<h4>Team</h4>
+<p>5인 팀 프로젝트 (기획/프로그래밍/아트)</p>
+
+<p>
+<a href="https://github.com/solie75/Text_RPG">
+<img src="https://img.shields.io/badge/개발현황-Repo-181717?style=flat-square&logo=github" alt="GitHub"></a>
+<a href="https://www.youtube.com/watch?v=-6THOweYTr0">
+<img src="https://img.shields.io/badge/GamePlay-YouTube-FF0000?style=flat-square&logo=youtube&logoColor=white" alt="Play"></a>
+</p>
+
+</details>
+
+<details open>
+<summary><strong>Moonlighter 모작</strong></summary>
+
+<table>
+<tr>
+<td width="300">
+<img src="https://github.com/user-attachments/assets/84c9fee4-8c33-4e7d-b780-39dfaee7fd99" alt="Moonlighter 모작">
+</td>
+<td>
+<p>
+DirectX11 Raw API 기반으로 2D 게임을 처음부터 직접 구현한 개인
+프로젝트입니다. 엔진 없이 게임 루프, 충돌 연산, 오브젝트 관리 시스템을
+밑바닥부터 설계했습니다.
+</p>
+<p>
+<img src="https://img.shields.io/badge/C%2B%2B-00599C?style=flat-square&logo=c%2B%2B&logoColor=white" alt="C++">
+<img src="https://img.shields.io/badge/1인-6c5ce7?style=flat-square" alt="Single">
+</p>
+</td>
+</tr>
+</table>
+
+<hr>
+
+<h4>Core Systems</h4>
+<ul>
+  <li><strong>Rendering &amp; Animation</strong> — 스프라이트 시트 기반 캐릭터 애니메이션 시스템</li>
+  <li><strong>Physics</strong> — 충돌체 설계 및 충돌 연산 직접 구현</li>
+  <li><strong>Combat</strong> — Projectile 궤적·충돌 연산</li>
+  <li><strong>Memory &amp; Performance</strong> — Object Pool 패턴으로 투사체/이펙트 등 빈번한 생성·소멸 객체 최적화</li>
+  <li><strong>Character</strong> — 상태(State) 기반 캐릭터 상태 관리</li>
+</ul>
+
+<h4>Tech Stack</h4>
+<p><code>DirectX11</code> <code>C++</code> <code>Win32 API</code></p>
+
+<p>
+<a href="https://github.com/solie75/Moonlighter_DirectX2D">
+<img src="https://img.shields.io/badge/개발현황-Repo-181717?style=flat-square&logo=github" alt="GitHub"></a>
+<a href="https://www.youtube.com/watch?v=Uq_KzGkzphc">
+<img src="https://img.shields.io/badge/GamePlay-YouTube-FF0000?style=flat-square&logo=youtube&logoColor=white" alt="Play"></a>
+</p>
+
+</details>
